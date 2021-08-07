@@ -1,0 +1,151 @@
+input[type="radio"]{
+    position: absolute;
+    left: -9999px;
+}
+
+:root{
+    --black:#1a1a1a;
+    --white:#fff;
+    --green:#49b293;
+}
+.filters *{
+    display: inline-block;
+}
+.filters label{
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.25rem;
+    border-radius: 2rem;
+    min-width: 50px;
+    line-height: normal;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+.filters label:hover{
+    background: var(--green);
+    color: var(--white);
+}
+.posts{
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(4,1fr);
+}
+.posts .post{
+    background: #dd9898;
+    border: 3px solid rgba(0, 255, 0, 0.1);
+}
+.posts .post-title{
+    font-size: 1.3rem;
+}
+.posts .post-title:hover {
+    text-decoration: underline;
+}
+.posts figcaption{
+    padding: 1rem;
+}
+.posts .post-categories {
+    margin-bottom: 0.75rem;
+    font-size: .75rem;
+}
+.posts .post-categories * {
+    display: inline-block;
+}
+.posts .post-categories li {
+    margin-bottom: 0.2rem;
+}
+.posts .post-categories a {
+    padding: 0.2rem 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid;
+    line-height: normal;
+    background: all 0.1s;
+}
+.posts .post-categories a:hover {
+    background: var(--green);
+    color: var(--white);
+}
+@media screen and (max-width: 900px) {
+    .posts {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+   
+  @media screen and (max-width: 650px) {
+    .posts {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+.newcontainer{
+    max-width: 450px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.featured-wrapper{
+    position: relative;
+}
+.featured-wrapper .dots{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+}
+.featured-wrapper .featured-list{
+    display: grid;
+}
+.featured-wrapper.featured-list li{
+    grid-column: 1;
+    grid-row: 1;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,110px);
+    gap: 10px;
+    grid-auto-rows: minmax(100px,auto);
+}
+.oneitem{
+    font-size: larger;
+    background: aquamarine;
+}
+.twoitem {
+    font-size: x-large;
+    background:azure;
+}
+.threeitem {
+    font-size: 250%;
+    background: chocolate;
+}
+.fouritem {
+    font: 2em sans-serif;
+    background: darkblue;
+}
+.fiveitem {
+    font: 3em  sans-serif;
+    background: darksalmon;
+}
+.sixitem {
+    font-size: 28pt;
+    background: forestgreen;
+    grid-area: 1/1/4/3;
+}
+
+.highlight {
+    background-color: yellow;
+}
+
+.error {
+    background-color: lightcoral;
+    border: red;
+}
+
+.body{
+    display: grid;
+    background-color:aliceblue;
+    font-family:sans-serif;
+    margin:0fr;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 1500px;
+}
+

@@ -1,0 +1,46 @@
+div{    
+    background-image:url(../CSSStudy/media/cc0-images/star.png), url(../CSSStudy/media/cc0-images/123.jpg); 
+    background-color:transparent;    
+    color:chocolate ;  
+}
+div p:first-child{
+    font-size: larger;
+    font-weight: bolder;
+}
+
+p::after {
+    content: " ➥"
+}  
+.box{
+    width:384;
+    height:248;
+    border: 5px solid rgb(226, 230, 24);
+    object-fit:contain;
+}
+img {
+    height: 100%;
+    width: 100%;
+  }
+p::before {
+    content: "";
+    display: inline;
+    width: 344px;
+    height: 200px;
+    background-color: rebeccapurple;
+    border: 1px solid black;
+}   
+
+p:hover{     
+    background: linear-gradient(105deg, rgba(255,255,255,.2) 39%, rgba(51,56,57,1) 96%) center center / 400px 200px no-repeat,
+    
+}
+
+#content1,
+#content2{
+    display:none;
+}
+
+#content1:target,
+#content2:target{
+    display:block;
+}
